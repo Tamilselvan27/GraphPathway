@@ -1,0 +1,103 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+:global {
+  #workbenchPageContent,
+  .CanvasComponent.LCS .CanvasZone {
+    max-width: 100% !important;
+  }
+
+  .root-99,
+  #sp-appBar,
+  #spCommandBar,
+  #spSiteHeader,
+  #spTopPlaceholder {
+    display: none !important;
+  }
+
+  .spAppAndPropertyPanelContainer {
+    padding-bottom: 0px !important;
+  }
+  .css-dip3t8 {
+    position: fixed !important;
+    width: 200px;
+  }
+}
+
+.css-dip3t8 {
+  position: fixed !important;
+  width: 200px;
+}
+
+div[data-automation-id="SiteHeader"] {
+  display: none !important;
+}
+
+div[data-automation-id="CanvasSection"] {
+  padding: 0px !important;
+}
+
+div[data-automation-id="CanvasControl"] {
+  padding: 0px !important;
+
+  margin: 0px !important;
+}
+
+.CanvasZone {
+  padding: 0 !important;
+}
+
+div[data-automation-id="CanvasZone"] > div:first-child {
+  max-width: 100% !important;
+  padding: 0px;
+}
+
+div[data-automation-id="CanvasLayout"] > div:first-child {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+div[data-automation-id="SimpleFooter"] {
+  display: none !important;
+}
+
+.casgConnect {
+  overflow: hidden;
+  padding: 0px !important;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+
+  .pageWrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(
+      --link
+    ); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(
+        --linkHovered
+      ); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}

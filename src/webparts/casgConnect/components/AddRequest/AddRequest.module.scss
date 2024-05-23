@@ -1,0 +1,74 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+.container_Wrapper {
+  padding: 0vw 4vw;
+  background-image: url("../../assets/Microsoftbackground.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.addContainer {
+  background-color: white;
+  scroll-behavior: auto;
+}
+
+.header_quadraLogo {
+  width: 175px;
+  height: 45px;
+  color: #fff;
+}
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .AddRequest_Button {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.submit_Container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.previewRequesterImage {
+  width: 48px !important;
+}
+.previewRequesterPDF {
+  width: 48px !important;
+  height: 48px !important;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+.Attachmentwrapper {
+  border: 2px dashed #ebeaea;
+  border-radius: 5px;
+  min-height: 100px;
+  max-height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.AttachmentCard {
+  border: 0px solid grey;
+  box-shadow: 0 0 2px rgb(0 0 0 / 12%), 0 2px 4px rgb(0 0 0 / 14%);
+  height: 4vw;
+  padding: 1vw;
+  margin: 1vw 2vw;
+}
